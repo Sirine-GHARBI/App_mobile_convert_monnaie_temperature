@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".TemperatureActivity"
+    android:layout_marginTop="50px"
+    android:layout_marginRight="50px"
+    android:layout_marginBottom="50px"
+    android:layout_marginLeft="50px">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="284dp"
+        android:layout_height="164dp"
+        android:src="@drawable/tempicon"
+        app:layout_constraintBottom_toTopOf="@+id/temperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="266dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="216dp"
+        android:ems="10"
+        android:hint="Saisier la température à convertir"
+        android:inputType="numberSigned|number|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonrenitialiser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+<RadioGroup
+    android:id="@+id/radioGroup"
+    android:layout_width="208dp"
+    android:layout_height="95dp"
+    android:layout_marginBottom="36dp"
+    app:layout_constraintBottom_toTopOf="@+id/button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.502"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+    app:layout_constraintVertical_bias="0.829">
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" °F --> °C" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="°C --> °F" />
+</RadioGroup>
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="152dp"
+    android:textColor="#CA0505"
+    android:textSize="24sp"
+    android:textStyle="bold|italic"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.34"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<Button
+    android:id="@+id/buttonrenitialiser"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="76dp"
+    android:text="Réinitialiser"
+    app:backgroundTint="#EC0202"
+    app:layout_constraintBottom_toTopOf="@+id/textView2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.256"
+    app:layout_constraintStart_toEndOf="@+id/button" />
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="128dp"
+    android:layout_height="47dp"
+    android:layout_marginStart="56dp"
+    android:layout_marginLeft="56dp"
+    android:text="Convertir"
+    app:layout_constraintBottom_toTopOf="@+id/textView2"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/buttonrenitialiser"
+    app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Convertisseur</string>
+
+<!--    <string name="connexion">Connexion</string>-->
+
+    <string name="money">Conversion €/DT</string>
+
+    <string name="Temperature">Conversion °F / °C</string>
+
+    <string name="open">Open NavBar</string>
+
+    <string name="close">Close NavBar</string>
+</resources>
